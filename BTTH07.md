@@ -98,11 +98,11 @@ Em hãy chạy thử lại đoạn code này với bộ số 7, 8, 9 và cho th�
 
 **Chương trình ban đầu mắc 3 lỗi logic liên quan đến kiểu dữ liệu:**
 
-- 1. Sai kiểu dữ liệu lưu trữ (int avg;): Kiểu int chỉ lưu được số nguyên. Khi điểm trung bình có phần thập phân (ví dụ 8.33), biến avg không thể lưu trữ được mà tự động cắt bỏ phần lẻ.
+1. Sai kiểu dữ liệu lưu trữ (int avg;): Kiểu int chỉ lưu được số nguyên. Khi điểm trung bình có phần thập phân (ví dụ 8.33), biến avg không thể lưu trữ được mà tự động cắt bỏ phần lẻ.
 
-- 2. Lỗi phép chia nguyên ((a + b + c) / 3): Tổng (a + b + c) là số nguyên (int), số 3 cũng là số nguyên (int). Trong C, số nguyên chia số nguyên luôn trả về số nguyên. Do đó, phép chia bị làm tròn xuống ngay tại bước tính toán trước khi gán vào avg.
+2. Lỗi phép chia nguyên ((a + b + c) / 3): Tổng (a + b + c) là số nguyên (int), số 3 cũng là số nguyên (int). Trong C, số nguyên chia số nguyên luôn trả về số nguyên. Do đó, phép chia bị làm tròn xuống ngay tại bước tính toán trước khi gán vào avg.
 
-- 3. Sai đặc tả định dạng xuất (%d): Trong hàm printf, %d chỉ dùng để in số nguyên. Khi đổi avg sang số thực, phải dùng %f (hoặc %.1f, %.2f) để hiển thị đúng phần thập phân.
+3. Sai đặc tả định dạng xuất (%d): Trong hàm printf, %d chỉ dùng để in số nguyên. Khi đổi avg sang số thực, phải dùng %f (hoặc %.1f, %.2f) để hiển thị đúng phần thập phân.
 
 ## 4. Code sau khi sửa 
 
